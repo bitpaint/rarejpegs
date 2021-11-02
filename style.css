@@ -13,15 +13,17 @@
   --eeveefront: url(img/davy.webp);
   --mewtwo1: #efb2fb;
   --mewtwo2: #acc6f8;
-  --mewtwofront: url(img/vogue.webp);
+  --voguefront: url(img/vogue.webp);
 }
 
 .card {
+  margin-top: 8%;
+  margin-right: 25px;
+  margin-left: 25px;
   width: 71.5vw;
   height: 100vw;
   position: relative;
   overflow: hidden;
-  margin: 20px;
   overflow: hidden;
   z-index: 10;
   touch-action: none;
@@ -62,7 +64,7 @@
 .card.mewtwo {
   --color1: var(--mewtwo1);
   --color2: var(--mewtwo2);
-  --front: var(--mewtwofront);
+  --front: var(--voguefront);
 }
 
 .card.eevee {
@@ -409,7 +411,7 @@ p {
   justify-content: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 540px) {
   .cards {
     flex-direction: row;
   }
